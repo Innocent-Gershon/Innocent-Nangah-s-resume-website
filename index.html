@@ -10,101 +10,159 @@
 <body>
     <header class="Header">
         <nav class="navbar">
-          <img src="https://st3.depositphotos.com/4073397/14210/i/1600/depositphotos_142103460-stock-photo-gold-star-logo.jpg" alt="logo" width="50" height="50" class="Image">
+            <img src="https://st3.depositphotos.com/4073397/14210/i/1600/depositphotos_142103460-stock-photo-gold-star-logo.jpg" alt="logo" class="Image">
             <div class="logo">Innocent Nanagh's Personalized Resume</div>
-            <ul class="nav-links">
-                <li><a href="#" data-section="about">About</a></li>
-                <li><a href="#" data-section="skills">Skills</a></li>
-                <li><a href="#" data-section="experience">Experience</a></li>
-                <li><a href="#" data-section="education">Education</a></li>
-                <li><a href="#" data-section="certifications">Certifications</a></li>
-            </ul>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+            <ul class="nav-links">
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#experience" data-section="experience">Experience</a></li>
+                <li><a href="#education" data-section="education">Education</a></li>
+                <li><a href="#certifications" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <div class="content-container">
         <section id="about" class="section">
             <h2 class="About-me">About Me</h2>
-            <div><img src="./imagess/Third-pic.png" alt="logo" width="250" height="200" class="Myself"></div>
-            <div class="About-Cont"><p>My name is Innocent Nangah, and I am a web developer currently pursuing a Bachelor of Science in Software Engineering (BSE).</p>
-              <p> I have always been passionate about technology, and I am now working towards specializing in Machine Learning (ML). ML excites me because of its potential to revolutionize industries by making systems smarter and more efficient. I see ML as the future of innovation, and I am eager to apply it to solve real-world problems.</p>
-              <p> By combining my web development skills with ML, I aim to build intelligent, data-driven applications that provide impactful solutions and improve user experiences.</p></div>
-              <div class="Volley-Mov">
+            <div class="about-content">
+                <div class="Myself"><img src="./imagess/About-me.jpg" alt="logo" class="profile-pic" width="320" height="250"></div>
+                <div class="About-Cont">
+                    <p>My name is Innocent Nangah, and I am a web developer currently pursuing a Bachelor of Science in Software Engineering (BSE).</p>
+                    <p> I have always been passionate about technology, and I am now working towards specializing in Machine Learning (ML). ML excites me because of its potential to revolutionize industries by making systems smarter and more efficient. I see ML as the future of innovation, and I am eager to apply it to solve real-world problems.</p>
+                    <p> By combining my web development skills with ML, I aim to build intelligent, data-driven applications that provide impactful solutions and improve user experiences.</p>
+                </div>
+            </div>
+            <div class="Volley-Mov">
                 <h2 class="fav">Favorites</h2>
-                <p class="volley-p">Volley Ball.</p>
-                <img src="./imagess/Volley ball.webp" alt="" width="320" height="320" class="Volley">
-                <p class="Movie-p">Watching movies.</p>
-                <img src="./imagess/Watching-movie.webp" alt="" width="320" height="320" class="Movies">
-              </div>
-            
+                <div class="favorites">
+                    <div class="volley">
+                        <p class="volley-p">Volley Ball.</p>
+                        <img src="./imagess/Volley ball.webp" alt="" class="Volley">
+                    </div>
+                    <div class="movies">
+                        <p class="Movie-p">Watching movies.</p>
+                        <img src="./imagess/Watching-movie.webp" alt="" class="Movies">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="section" style="display: none;">
             <h2>My Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Git</li>
-                <li>Responsive web design</li>
-                <li>Agile development</li>
-            </ul>
-        </section>
+            <div class="skills-container">
+              <div class="skills-row">
+                <div class="skill-item">
+                  <img src="html5.svg" alt="HTML5 Icon" class="skill-icon">
+                  <h3>HTML5</h3>
+                  <p>Proficient in HTML5 and its latest features.</p>
+                </div>
+                <div class="skill-item">
+                  <img src="css3.svg" alt="CSS3 Icon" class="skill-icon">
+                  <h3>CSS3</h3>
+                  <p>Experienced in CSS3 for creating responsive and visually appealing designs.</p>
+                </div>
+                <div class="skill-item">
+                  <img src="javascript.svg" alt="JavaScript Icon" class="skill-icon">
+                  <h3>JavaScript (ES6+)</h3>
+                  <p>Skilled in modern JavaScript, including ES6 and beyond.</p>
+                </div>
+              </div>
+              <div class="skills-row">
+                <div class="skill-item">
+                  <img src="react.svg" alt="React.js Icon" class="skill-icon">
+                  <h3>React.js</h3>
+                  <p>Proficient in React.js for building dynamic and efficient web applications.</p>
+                </div>
+                <div class="skill-item">
+                  <img src="nodejs.svg" alt="Node.js Icon" class="skill-icon">
+                  <h3>Node.js</h3>
+                  <p>Experienced in using Node.js for server-side development.</p>
+                </div>
+                <div class="skill-item">
+                  <img src="php.svg" alt="PHP Icon" class="skill-icon">
+                  <h3>PHP</h3>
+                  <p>Skilled in PHP for building server-side web applications.</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <section id="experience" class="section" style="display: none;">
+          <section id="experience" class="section" style="display: none;">
             <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>Web Developer</h3>
-                <p>ABC Company, 2019 - Present</p>
-                <ul>
-                    <li>Developed and maintained responsive web applications using HTML, CSS, and JavaScript.</li>
-                    <li>Collaborated with cross-functional teams to design and implement new features.</li>
-                    <li>Optimized website performance and implemented best practices for SEO and accessibility.</li>
-                    <li>Participated in code reviews and mentored junior developers.</li>
-                </ul>
+            <div class="experience-container">
+              <div class="experience-item">
+                <h2>Building Websites and Web Applications</h2>
+              <div>I developed and Maintained Responsive Websites: I have experience building websites with HTML, CSS, and JavaScript. This include personal projects where I have designed user-friendly website with my experience and responsive sites.
+
+                Front-End Development: I have worked on front-end projects using JavaScript and possibly frameworks like React or Vue.js to build dynamic, interactive user interfaces.</div>
+              </div>
+              <div class="experience-item">
+                <h2>Volunteer, Open House Event</h2>
+               <div>African Leadership University, Kigali, Rwanda
+
+                I volunteered at the Open House event, assisting with student registration and giving campus tours. I helped guide new students and their families, providing information about the university. This experience improved my communication skills and allowed me to work with others, contributing to the welcoming atmosphere for incoming students.</div>
+              </div>
             </div>
-            <div class="experience-item">
-                <h3>Junior Web Developer</h3>
-                <p>XYZ Agency, 2017 - 2019</p>
-                <ul>
-                    <li>Worked on various client projects, implementing front-end and back-end functionality.</li>
-                    <li>Collaborated with designers to translate design mockups into responsive web pages.</li>
-                    <li>Participated in Agile development processes, including daily standups and sprint planning.</li>
-                </ul>
-            </div>
-        </section>
+          </section>
 
         <section id="education" class="section" style="display: none;">
             <h2>Education</h2>
             <div class="education-item">
-                <h3>Bachelor of Science in Computer Science (BSc)</h3>
-                <p>University of Technology, 2013 - 2017</p>
-                <p>Graduated with a GPA of 3.8 out of 4.0.</p>
-                <ul>
-                    <li>Coursework: Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Database Management Systems.</li>
-                    <li>Participated in various hackathons and coding competitions, winning several awards.</li>
-                </ul>
+                <h3>Bachelor of Science in Software Engineering (BSE)</h3>
+                <img src="./imagess/Campus.jpg" alt="Campus" width="500" height="200">
+                <p>African Leadership University, Kigali, Rwanda
+                    January 2024 - Present
+                    
+                    Currently pursuing a Bachelor of Science in Software Engineering (BSE) with a focus on Machine Learning.
+                    Relevant Coursework: Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Database Management Systems, Machine Learning Basics.
+                    Actively participating in hackathons and coding challenges to sharpen problem-solving and teamwork skills.
+                    Building a strong foundation in web development while exploring data-driven technologies for future specialization in Machine Learning.</p>
+                
             </div>
         </section>
 
         <section id="certifications" class="section" style="display: none;">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Certified Web Developer, Udemy (2019)</li>
-                <li>AWS Certified Solutions Architect - Associate, Amazon Web Services (2020)</li>
-                <li>React.js Certification, FreeCodeCamp (2021)</li>
-            </ul>
+            <h2 class="Certi-h">Certifications</h2>
+           <div class="Certi-Cont">On August 19, 2024, I proudly earned my first certification from Johns Hopkins University through Coursera, after completing the course "HTML, CSS, and JavaScript for Web Developers." This achievement was the result of unwavering dedication, hard work, and commitment. The process demanded both sacrifice and persistence, but the outcome was deeply fulfilling. I am now eager to pursue more certifications from various reputable platforms to continue expanding my knowledge and advancing my skills.</div>
+           <img src="./imagess/Certi.jpg" alt="" class="Certi" width="200" height="200">
         </section>
     </div>
+
+    <section id="contact" class="section" style="display: none;">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@example.com</p>
+                <p>Address: 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+        <div>
+            <img src="./imagess/linekln.webp" alt="Linekln" width="30" height="30">
+            <img src="./imagess/facebook new.png" alt="facebook" width="30" height="30">
+            <img src="./imagess/twitter new.webp" alt="twitter" width="30" height="30">
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
