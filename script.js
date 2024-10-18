@@ -3,7 +3,8 @@ const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
 burger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
+  navLinks.classList.toggle('nav-active');
+  burger.classList.toggle('toggle');
 });
 
 // Handle navigation links
@@ -55,4 +56,33 @@ window.addEventListener('click', (event) => {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
+});
+
+// Slideshow functionality
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    
+    slides.forEach((slide) => {
+        slide.style.opacity = 0; // Hide all slides
+    });
+    
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; } // Loop back to the first slide
+    
+    slides[slideIndex - 1].style.opacity = 1; // Show the current slide
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+// Handle form submission
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission
+  popup.style.display = 'flex'; // Show the popup
+});
+
+// Close the popup when the close button is clicked
+closePopup.addEventListener('click', () => {
+  popup.style.display = 'none'; // Hide the popup
 });
